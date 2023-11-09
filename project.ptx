@@ -4,23 +4,7 @@
     <target
       name="web"
       format="html"
-      deploy-dir="2024">
-      <stringparams debug.project.number="the-way-it-should-be"/>
-    </target>
-    <target
-      name="print"
-      format="pdf"
-      output-filename="TBIL-Calculus-2024.pdf"
-      deploy-dir="2024/pdf/">
-      <stringparams debug.project.number="the-way-it-should-be"/>
-    </target>
-    <target
-      name="slides"
-      format="pdf"
-      publication="slides.ptx"
-      xsl="slides.xsl"
-      output-filename="TBIL-Calculus-2024-slides.pdf"
-      deploy-dir="2024/pdf">
+      deploy-dir=".">
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <!-- use `python scripts/bank.py` for this target -->
@@ -28,7 +12,7 @@
       name="checkit"
       format="custom"
       output-dir="../exercises/docs"
-      deploy-dir="2024/exercises">
+      deploy-dir="bank">
       <!-- built by checkit, not pretext -->
       <!-- everything except output-dir and deploy-dir is unused -->
     </target>
